@@ -1,3 +1,4 @@
+// Dependencies
 import path from 'path';
 
 export default type => {
@@ -8,9 +9,10 @@ export default type => {
       libraryTarget: 'commonjs2',
     };
   }
+
   return {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, '../../public/app'),
     publicPath: '/app/',
-  }
+  };
 };

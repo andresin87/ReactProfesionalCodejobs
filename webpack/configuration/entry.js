@@ -1,3 +1,4 @@
+// Environment
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
 export default type => {
@@ -16,7 +17,7 @@ export default type => {
     );
   }
 
-  entry.main.push(
-    './client.js',
-  );
+  entry.main.push('./client.js');
+
+  return entry;
 };

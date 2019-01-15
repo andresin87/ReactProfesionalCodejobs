@@ -1,3 +1,4 @@
+// Configuration
 import { rules, extensions, modules } from './configuration';
 
 export default type => ({
@@ -7,5 +8,5 @@ export default type => ({
   resolve: {
     extensions: extensions(),
     modules: modules(),
-  }
+  },
 });

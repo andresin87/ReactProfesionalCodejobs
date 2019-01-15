@@ -9,7 +9,7 @@ export default type => {
     {
       test: /\.js$/,
       use: 'babel-loader',
-      exclude: /node-modules/,
+      exclude: /node_modules/,
     }
   ];
 
@@ -34,4 +34,6 @@ export default type => {
       ],
     });
   }
+
+  return rules;
 };
