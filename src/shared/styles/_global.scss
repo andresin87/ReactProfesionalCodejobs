@@ -1,6 +1,6 @@
-
 @import './vars';
+@import './global-mixins';
 
 body {
-    background-color: $white;
+    background-color: $gray;
 }
