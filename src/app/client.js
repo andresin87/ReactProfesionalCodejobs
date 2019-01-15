@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 
 // Containers
-import App from 'containers/App';
+import App from 'App';
 
 // DOM
 const rootElement = document.getElementById('root');
@@ -26,6 +26,6 @@ renderApp(App);
 // HMR
 if (module.hot) {
   module.hot.accept('containers/App', () => {
-    renderApp(require('containers/App').default);
+    renderApp(require('App').default);
   });
 }
