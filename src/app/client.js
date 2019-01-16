@@ -25,7 +25,7 @@ renderApp(App);
 
 // HMR
 if (module.hot) {
-  module.hot.accept('containers/App', () => {
+  module.hot.accept('App', () => {
     renderApp(require('App').default);
   });
 }
